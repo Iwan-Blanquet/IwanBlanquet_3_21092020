@@ -1,0 +1,19 @@
+{
+  "name": "iwanblanquet_3_21092020",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iwan-Blanquet/IwanBlanquet_3_21092020.git"
+  },
+  "author": "IB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iwan-Blanquet/IwanBlanquet_3_21092020/issues"
+  },
+  "homepage": "https://github.com/Iwan-Blanquet/IwanBlanquet_3_21092020#readme"
+}
