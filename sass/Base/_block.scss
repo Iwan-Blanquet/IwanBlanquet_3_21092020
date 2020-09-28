@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	height: 100%;
+}
+header{
+	text-align: center;
+}
+img{
+	height: 100%;
+	width: 100%;
+}
+.logo {
+	padding: 1.6em;
+	}
+.location {
+	background: $color-secondary;
+	padding: 1.2em;
+	@include box-shadow;
+}
+.explore {
+	background: $color-primary;
+	padding: 1.8em;
+}
+.btn{
+	background: $color-btn;
+	color: white;
+	cursor: pointer;
+	width: 75%;
+	padding: 1.5em 2em;
+	border-radius: 10rem;
+	@include box-shadow;
+}
+.work {
+	&_btn{
+	background: $color-primary;
+	cursor: pointer;
+	padding: 2.5em 3em;
+	border-radius: 2rem;
+	@include box-shadow;
+	margin: 2em;
+	}
+	
+}
