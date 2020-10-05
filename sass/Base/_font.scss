@@ -1,3 +1,18 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto_light/Roboto-Light-webfont.eot');
+	src: url('roboto_light/Roboto-Light-webfont.eot?iefix') format('embedded-opentype'),
+		 url('roboto_light/Roboto-Light-webfont.woff') format('woff'),
+		 url('roboto_light/Roboto-Light-webfont.ttf') format('truetype'),
+		 url('roboto_light/Roboto-Light-webfont.svg#Roboto') format('svg');
+}
+@font-face {
+	font-family: 'Shrikhand';
+	src: url('Shrikhand-Regular.ttf') format('truetype');
+}
 body{
-	font-family: arial, sans-serif;
+	font-family: Roboto, sans-serif;
+}
+h1, h2 {
+	font-family: Shirkhand, sans-serif;
 }

@@ -1,17 +1,6 @@
-body {
-	margin: 0;
-	height: 100%;
-}
 header{
 	text-align: center;
 }
-img{
-	height: 100%;
-	width: 100%;
-}
-.logo {
-	padding: 1.6em;
-	}
 .location {
 	background: $color-secondary;
 	padding: 1.2em;
@@ -28,16 +17,23 @@ img{
 	width: 75%;
 	padding: 1.5em 2em;
 	border-radius: 10rem;
-	@include box-shadow;
+	@include btn-shadow;
 }
 .work {
 	&_btn{
-	background: $color-primary;
-	cursor: pointer;
-	padding: 2.5em 3em;
-	border-radius: 2rem;
-	@include box-shadow;
-	margin: 2em;
+		background: $color-primary;
+		cursor: pointer;
+		padding: 2.5em 3em;
+		border-radius: 2rem;
+		@include btn-shadow;
+		margin: 2em;
 	}
-	
+	&_number {
+		background: $color-btn;
+		border-radius: 2rem;
+	}
+}
+section h2 {
+		margin-left: 10%;
+		margin-top: 15%;
 }
