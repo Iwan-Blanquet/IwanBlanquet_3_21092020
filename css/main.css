@@ -45,31 +45,83 @@ header {
 }
 
 .btn {
-  background: linear-gradient(#e688c9, #8b379e);
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   cursor: pointer;
   width: 75%;
   padding: 1.5em 2em;
-  border-radius: 10rem;
+  border-radius: 10em;
   box-shadow: 0px 5px 5px #c4c4c4;
+  margin-bottom: 2em;
 }
 
+section {
+  margin-top: 3em;
+}
+
+.work {
+  margin-bottom: 4em;
+}
 .work_btn {
+  display: flex;
+  position: relative;
   background: #F0F0F0;
   cursor: pointer;
-  padding: 2.5em 3em;
-  border-radius: 2rem;
+  padding: 1em 2.6em;
+  border-radius: 1.5em;
   box-shadow: 0px 5px 5px #c4c4c4;
   margin: 2em;
+  align-items: center;
+  font-weight: bold;
+}
+.work_btn:hover {
+  background: #D0D6F7;
+}
+.work_btn:hover i {
+  color: #9356DC;
 }
 .work_number {
-  background: linear-gradient(#e688c9, #8b379e);
-  border-radius: 2rem;
+  position: absolute;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-left: -52px;
+  margin-right: 1em;
+}
+.work p {
+  margin-left: 1em;
 }
 
 section h2 {
-  margin-left: 10%;
-  margin-top: 15%;
+  margin: 5% 5% 5% 5%;
+}
+
+.restaurant {
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+}
+
+.restaurant {
+  background: #F0F0F0;
+}
+.restaurant_img {
+  height: 300px;
+  background: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
+  background-size: 30em;
+  background-position: 0px -80px;
+  border-radius: 2em;
+  position: relative;
+}
+.restaurant_description {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  border-radius: 0 0 1.2em 1.2em;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,24 +16,69 @@ header{
 	cursor: pointer;
 	width: 75%;
 	padding: 1.5em 2em;
-	border-radius: 10rem;
+	border-radius: 10em;
 	@include btn-shadow;
+	margin-bottom: 2em;
+}
+section{
+	margin-top: 3em;
 }
 .work {
+	margin-bottom: 4em;
 	&_btn{
+		display: flex;
+		position: relative;
 		background: $color-primary;
 		cursor: pointer;
-		padding: 2.5em 3em;
-		border-radius: 2rem;
+		padding: 1em 2.6em;
+		border-radius: 1.5em;
 		@include btn-shadow;
 		margin: 2em;
+		align-items: center;
+		font-weight: bold;
+		&:hover {
+			background: $color-hover;
+			i {color: $color-uname;}
+		}
 	}
 	&_number {
+		position: absolute;
 		background: $color-btn;
-		border-radius: 2rem;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		font-weight: bold;
+		color: white;
+		margin-left: -52px;
+		margin-right: 1em;
+	}
+	& p {
+		margin-left: 1em;
 	}
 }
 section h2 {
-		margin-left: 10%;
-		margin-top: 15%;
+		margin: 5% 5% 5% 5%;
+}
+.restaurant {
+	padding-top: 1.8em;
+	padding-bottom: 1.8em;
+}
+.restaurant {
+	background: $color-primary;
+	&_img {
+		height: 300px;
+		background: url('./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg') no-repeat;
+		background-size: 30em;
+		background-position: 0px -80px;
+		border-radius: 2em;
+		position: relative;
+	}
+	&_description {
+		position: absolute;
+		bottom: 0;
+		background: white;
+		width: 100%;
+		border-radius:0 0 1.2em 1.2em;
+	}
 }
