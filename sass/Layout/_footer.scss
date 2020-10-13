@@ -1,0 +1,21 @@
+footer {
+    background: $color-footer;
+    color: white;
+    padding: 1em;
+    padding-bottom: 2em;
+    & p {
+        margin: 0;
+    }
+    & img {
+        width: 40%;
+        margin: 0.5em;
+        color: white;
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}
+.footer {
+    font-weight: bold;
+}

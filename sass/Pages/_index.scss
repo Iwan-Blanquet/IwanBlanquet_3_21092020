@@ -112,12 +112,14 @@ section h2 {
 		& p {
 			margin: 0;
 			padding: 0em 1em 0em 1em;
+			font-size: 1.2em;
 		}
 		& i {
 			position: relative;
-			left: 14em;
-			bottom: 1.8em;
+			left: 13em;
+			bottom: 1.5em;
 			margin: 0;
+			font-size: 1.6em;
 			cursor: pointer;
 			&:hover{
 				background: $color-btn;
