@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./../../css/roboto_light/Roboto-Light-webfont.eot");
+  src: url("./../../css/roboto_light/Roboto-Light-webfont.eot?iefix") format("embedded-opentype"), url("./../../css/roboto_light/Roboto-Light-webfont.woff") format("woff"), url("./../../css/roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("./../../css/roboto_light/Roboto-Light-webfont.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("./../../css/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+  width: 65%;
+}
+
+.logo {
+  text-align: center;
+  padding: 1em;
+  display: flex;
+}
+.logo_fleche {
+  font-size: 24px;
+}
+
+.image {
+  background: url("./../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
+  height: 300px;
+  background-size: 30em;
+  margin: 0;
+  position: relative;
+}
+
+.name {
+  background: #F0F0F0;
+  margin: 0;
+  border-radius: 2em 2em 0 0;
+  padding: 1em;
+  padding-bottom: 3em;
+}
+
+.container {
+  background: #F0F0F0;
+  padding-bottom: 3em;
+}
+
+section h1 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 1em;
+  padding-bottom: 0.4em;
+}
+section h1 span {
+  border-bottom: solid 5px #99E2D0;
+}
+
+.menu {
+  padding-bottom: 4em;
+}
+
+.dish {
+  display: flex;
+  margin: 1em;
+  position: relative;
+  border-radius: 1em;
+  background: white;
+  padding: 0.5em;
+  padding-bottom: 1em;
+  box-shadow: 0px 5px 5px #c4c4c4;
+}
+.dish_description h2, .dish_description p {
+  margin: 0.25em;
+}
+.dish_price {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  padding: 1.5em 2em;
+  border-radius: 10em;
+  box-shadow: 0px 5px 5px #c4c4c4;
+  margin-bottom: 2em;
+  margin-left: 4.5em;
+  text-align: center;
+}
+
+footer {
+  background: #2A2C32;
+  color: white;
+  padding: 1em;
+  padding-bottom: 2em;
+}
+footer p {
+  margin: 0.5em;
+}
+footer img {
+  width: 40%;
+  margin: 0.5em;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+.footer {
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+/*# sourceMappingURL=pages.css.map */

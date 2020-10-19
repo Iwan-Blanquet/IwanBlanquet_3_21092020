@@ -1,0 +1,53 @@
+.image {
+    @include logo-restaurant ($url: $url-1);
+}
+.name {
+
+    background: $color-background-1;
+    margin: 0;
+    border-radius: 2em 2em 0 0;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+.container {
+    background: $color-background-1;
+    padding-bottom: 3em;
+}
+section {
+    & h1 {
+        text-transform: uppercase;
+        margin: 0;
+        margin-left: 1em;
+        padding-bottom: 0.4em;
+        & span {
+            border-bottom: solid 5px $color-tertiary;
+        }
+    }
+}
+.menu {
+    padding-bottom: 4em;
+}
+.dish {
+    display: flex;
+    margin: 1em;
+	position: relative;
+	border-radius: 1em;
+	background: white;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    @include btn-shadow;
+    &_description {
+       & h2, p {
+           margin: 0.25em;
+       }
+    }
+    &_price {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        font-weight: bold;
+    }
+}
+.btn {
+    @include btn (50%, 4.5em);
+}
