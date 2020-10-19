@@ -2,7 +2,6 @@
     @include logo-restaurant ($url: $url-1);
 }
 .name {
-
     background: $color-background-1;
     margin: 0;
     border-radius: 2em 2em 0 0;
@@ -49,5 +48,5 @@ section {
     }
 }
 .btn {
-    @include btn (50%, 4.5em);
+    @include btn (50%, 3em);
 }

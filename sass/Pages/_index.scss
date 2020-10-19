@@ -24,14 +24,7 @@ header{
 	padding: 1.8em;
 }
 .btn{
-	background: $color-btn;
-	color: white;
-	cursor: pointer;
-	width: 75%;
-	padding: 1.5em 2em;
-	border-radius: 10em;
-	@include btn-shadow;
-	margin-bottom: 2em;
+	@include btn;
 }
 section{
 	margin-top: 3em;

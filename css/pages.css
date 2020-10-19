@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Roboto";
-  src: url("./../../css/roboto_light/Roboto-Light-webfont.eot");
-  src: url("./../../css/roboto_light/Roboto-Light-webfont.eot?iefix") format("embedded-opentype"), url("./../../css/roboto_light/Roboto-Light-webfont.woff") format("woff"), url("./../../css/roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("./../../css/roboto_light/Roboto-Light-webfont.svg#Roboto") format("svg");
+  src: url("roboto_light/Roboto-Light-webfont.eot");
+  src: url("roboto_light/Roboto-Light-webfont.eot?iefix") format("embedded-opentype"), url("roboto_light/Roboto-Light-webfont.woff") format("woff"), url("roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("roboto_light/Roboto-Light-webfont.svg#Roboto") format("svg");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("./../../css/Shrikhand-Regular.ttf") format("truetype");
+  src: url("Shrikhand-Regular.ttf") format("truetype");
 }
 body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3 {
+.name {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -98,7 +98,7 @@ section h1 span {
   border-radius: 10em;
   box-shadow: 0px 5px 5px #c4c4c4;
   margin-bottom: 2em;
-  margin-left: 4.5em;
+  margin-left: 3em;
   text-align: center;
 }
 
