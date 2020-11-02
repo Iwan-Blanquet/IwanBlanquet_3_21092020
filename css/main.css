@@ -17,7 +17,12 @@ body {
 
 body {
   margin: 0;
-  height: 100%;
+}
+@media (min-width: 750px) {
+  body {
+    width: 55%;
+    margin: auto;
+  }
 }
 
 img {
@@ -57,6 +62,12 @@ header {
   margin-bottom: 2em;
   margin-left: 0;
   text-align: center;
+}
+@media (min-width: 750px) {
+  .btn {
+    width: 50%;
+    margin-left: 20%;
+  }
 }
 
 section {
@@ -103,6 +114,14 @@ section {
 .work p {
   margin-left: 1em;
 }
+@media (min-width: 750px) {
+  .work {
+    margin: 10%;
+  }
+  .work_btn {
+    width: 70%;
+  }
+}
 
 section h2 {
   margin: 5% 5% 5% 5%;
@@ -124,7 +143,13 @@ section h2 {
   background-position: 0 -50px;
   border-radius: 2em 2em 0 0;
   position: relative;
-  margin: 1em;
+  margin: 2em;
+}
+@media (min-width: 750px) {
+  .restaurant_img--1 {
+    background-size: 70em;
+    height: 400px;
+  }
 }
 .restaurant_img--2 {
   height: 300px;
@@ -133,7 +158,13 @@ section h2 {
   background-position: 0 -50px;
   border-radius: 2em 2em 0 0;
   position: relative;
-  margin: 1em;
+  margin: 2em;
+}
+@media (min-width: 750px) {
+  .restaurant_img--2 {
+    background-size: 70em;
+    height: 400px;
+  }
 }
 .restaurant_img--3 {
   height: 300px;
@@ -142,7 +173,13 @@ section h2 {
   background-position: 0 -50px;
   border-radius: 2em 2em 0 0;
   position: relative;
-  margin: 1em;
+  margin: 2em;
+}
+@media (min-width: 750px) {
+  .restaurant_img--3 {
+    background-size: 70em;
+    height: 400px;
+  }
 }
 .restaurant_img--4 {
   height: 300px;
@@ -151,7 +188,13 @@ section h2 {
   background-position: 0 -50px;
   border-radius: 2em 2em 0 0;
   position: relative;
-  margin: 1em;
+  margin: 2em;
+}
+@media (min-width: 750px) {
+  .restaurant_img--4 {
+    background-size: 70em;
+    height: 400px;
+  }
 }
 .restaurant_new {
   position: absolute;
@@ -167,7 +210,7 @@ section h2 {
 }
 .restaurant_description {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   background: white;
   width: 100%;
   border-radius: 0 0 1.2em 1.2em;
@@ -182,16 +225,14 @@ section h2 {
   padding: 0em 1em 0em 1em;
   font-size: 1.2em;
 }
-.restaurant_description i {
-  position: relative;
-  left: 13em;
-  bottom: 1.5em;
+.restaurant i {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
   margin: 0;
   font-size: 1.6em;
   cursor: pointer;
-}
-.restaurant_description i:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 
 footer {
