@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/main.css",
-    "sass1": "sass --watch ./sass/pages.scss:./css/pages.css"
+    "sass1": "sass --watch ./sass/page1.scss:./css/page1.css",
+    "sass2": "sass --watch ./sass/page2.scss:./css/page2.css",
+    "sass3": "sass --watch ./sass/page3.scss:./css/page3.css",
+    "sass4": "sass --watch ./sass/page4.scss:./css/page4.css"
   },
   "repository": {
     "type": "git",
