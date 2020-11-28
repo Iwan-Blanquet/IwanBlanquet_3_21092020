@@ -70,10 +70,6 @@ header {
   }
 }
 
-section {
-  margin-top: 3em;
-}
-
 .work {
   margin-bottom: 4em;
 }
@@ -94,6 +90,7 @@ section {
 }
 .work_btn:hover {
   background: #D0D6F7;
+  box-shadow: 0px 5px 10px #919191;
 }
 .work_btn:hover i {
   color: #9356DC;
@@ -116,10 +113,17 @@ section {
 }
 @media (min-width: 750px) {
   .work {
-    margin: 10%;
+    box-shadow: 0px 5px 5px #c4c4c4;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
   }
   .work_btn {
     width: 70%;
+  }
+}
+@media (min-width: 1000px) {
+  .work {
+    padding-left: 4em;
   }
 }
 
@@ -226,13 +230,39 @@ section h2 {
   font-size: 1.2em;
 }
 .restaurant i {
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
+  position: relative;
+  left: 250px;
+  bottom: 50px;
   margin: 0;
   font-size: 1.6em;
   cursor: pointer;
-  color: white;
+  color: linear-gradient(#FF79DA, #9356DC);
+}
+@media (min-width: 750px) {
+  .restaurant i {
+    left: 350px;
+  }
+}
+@media (min-width: 1000px) {
+  .restaurant i {
+    left: 500px;
+  }
+}
+.restaurant .fas {
+  display: none;
+}
+
+a h3, a p {
+  color: black;
+}
+
+.heart:hover .far,
+.heart .fas {
+  display: none;
+}
+
+.heart:hover .fas {
+  display: inline;
 }
 
 footer {

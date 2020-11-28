@@ -33,6 +33,21 @@ img {
 }
 .logo_fleche {
   font-size: 24px;
+  color: black;
+}
+@media (min-width: 1000px) {
+  .logo img {
+    width: auto;
+    position: relative;
+    left: 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo img {
+    width: auto;
+    position: relative;
+    left: 200px;
+  }
 }
 
 .image {
@@ -105,7 +120,7 @@ section h1 span {
 }
 .dish::before {
   transition: all 0.2s linear 0s;
-  content: "";
+  content: "";
   font-family: "Font Awesome 5 Free";
   font-size: 30px;
   display: flex;
@@ -118,14 +133,54 @@ section h1 span {
   height: 100%;
   background-color: #99E2D0;
   text-align: center;
-  transition: all 0.2s linear 0s;
 }
-.dish:hover {
-  text-indent: 0;
+.dish:hover .dish_price {
+  text-indent: -105px;
 }
 .dish:hover::before {
   right: 0;
   text-indent: 0px;
+}
+.dish:hover h2, .dish:hover p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dish:hover h2 {
+  width: 180px;
+}
+@media (min-width: 375px) {
+  .dish:hover h2 {
+    width: 230px;
+  }
+}
+@media (min-width: 425px) {
+  .dish:hover h2 {
+    width: 290px;
+  }
+}
+@media (min-width: 1000px) {
+  .dish:hover h2 {
+    width: 400px;
+  }
+}
+.dish:hover p {
+  width: 140px;
+}
+@media (min-width: 375px) {
+  .dish:hover p {
+    width: 200px;
+  }
+}
+@media (min-width: 425px) {
+  .dish:hover p {
+    width: 250px;
+  }
+}
+@media (min-width: 1000px) {
+  .dish:hover p {
+    width: 400px;
+  }
 }
 
 .btn {

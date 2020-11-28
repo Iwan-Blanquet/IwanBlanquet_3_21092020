@@ -29,9 +29,7 @@ header{
 .btn{
 	@include btn;
 }
-section{
-	margin-top: 3em;
-}
+
 .work {
 	margin-bottom: 4em;
 	& i{
@@ -51,6 +49,7 @@ section{
 		&:hover {
 			background: $color-hover;
 			i {color: $color-primary;}
+			box-shadow: 0px 5px 10px darken($color-background-2, 30%);
 		}
 	}
 	&_number {
@@ -70,10 +69,15 @@ section{
 		margin-left: 1em;
 	}
 	@media (min-width:750px) {
-		margin: 10%;
+		@include btn-shadow;
+		margin-bottom: 2em;
+		padding-bottom: 1em;
 		&_btn {
 			width: 70%;
-		}
+		}	
+	}
+	@media (min-width:1000px) {
+		padding-left: 4em;
 	}
 }
 section h2 {
@@ -130,12 +134,33 @@ section h2 {
 		}
 	}
 	& i {
-		position: absolute;
-		right: 30px;
-		bottom: 20px;
+		position: relative;
+		left: 250px;
+		bottom: 50px;
 		margin: 0;
 		font-size: 1.6em;
 		cursor: pointer;
-		color: white;
+		color: $color-btn;
+		@media (min-width: 750px) {
+			left:350px;
+		}
+		@media (min-width: 1000px){
+			left: 500px;
+		}
+		}	
+	.fas {
+		display:none;
 	}
+}
+a {
+	& h3, p {
+		color: black;
+	}
+}
+.heart:hover .far,
+.heart .fas {
+    display: none;
+}
+.heart:hover .fas {
+    display: inline;
 }

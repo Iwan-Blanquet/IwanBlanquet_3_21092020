@@ -53,7 +53,7 @@ section {
     }
     &::before {
         transition: all 0.2s linear 0s;
-        content: "\f00C";
+        content: "\f058";
         font-family: "Font Awesome 5 Free";
         font-size: 30px;
         display: flex;
@@ -66,13 +66,43 @@ section {
         height: 100%;
         background-color: $color-tertiary;
         text-align: center;
-        transition: all 0.2s linear 0s;
     }
     &:hover {
-        text-indent: 0;
+        & .dish_price {
+            text-indent: -105px;
+        }
         &::before {
             right: 0;
             text-indent: 0px;
+        }
+        & h2, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        & h2 {
+            width: 180px;
+            @media (min-width: 375px) {
+                width: 230px;
+            }
+            @media (min-width: 425px) {
+                width: 290px;
+            }
+            @media (min-width: 1000px) {
+                width: 400px;
+            }
+        }
+        & p {
+            width: 140px;
+            @media (min-width: 375px) {
+                width: 200px;
+            }
+            @media (min-width: 425px) {
+                width: 250px;
+            }
+            @media (min-width: 1000px) {
+                width: 400px;
+            }
         }
     }
 }

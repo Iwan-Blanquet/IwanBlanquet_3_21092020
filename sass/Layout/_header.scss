@@ -11,6 +11,22 @@ img{
 	padding: 1em;
 	display: flex;
 	&_fleche {
-		font-size: 24px;	
+		font-size: 24px;
+		color: black;	
 	}
+	@media (min-width:1000px) {
+		img {
+			width: auto;
+			position: relative;
+			left: 80px;
+		}
+	}
+	@media (min-width:1440px) {
+		img {
+			width: auto;
+			position: relative;
+			left: 200px;
+		}
+	}
+
 }
