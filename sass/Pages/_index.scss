@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	animation: load 5000ms;
 	@media (min-width: 750px) {
 		width: 55%;
 		margin: auto;
@@ -140,12 +141,21 @@ section h2 {
 		margin: 0;
 		font-size: 1.6em;
 		cursor: pointer;
-		color: $color-btn;
+		color: $color-secondary;
+		@media (min-width: 375px){
+			left: 300px;
+		}
+		@media (min-width: 400px){
+			left: 350px;
+		}
 		@media (min-width: 750px) {
 			left:350px;
 		}
 		@media (min-width: 1000px){
 			left: 500px;
+		}
+		@media (min-width: 1200px){
+			left: 700px;
 		}
 		}	
 	.fas {
@@ -157,10 +167,12 @@ a {
 		color: black;
 	}
 }
-.heart:hover .far,
-.heart .fas {
-    display: none;
-}
-.heart:hover .fas {
-    display: inline;
+.heart:hover {
+	& .far {
+		display: none;
+	}
+	& .fas {
+		display: inline;
+		animation: heart 1000ms;
+	}
 }

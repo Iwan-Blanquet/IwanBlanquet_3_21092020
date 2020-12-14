@@ -131,10 +131,12 @@ section h1 span {
   right: -3em;
   width: 3em;
   height: 100%;
+  color: white;
   background-color: #99E2D0;
   text-align: center;
 }
 .dish:hover .dish_price {
+  transition: all 0.2s linear 0s;
   text-indent: -105px;
 }
 .dish:hover::before {
