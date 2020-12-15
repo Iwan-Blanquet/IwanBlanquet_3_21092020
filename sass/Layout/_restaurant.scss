@@ -18,8 +18,10 @@ header {
 }
 section {
     animation: load 5s;
-    & h1, .title {
+    & .title {
         text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
         margin: 0;
         margin-left: 1em;
         padding-bottom: 0.4em;

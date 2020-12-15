@@ -112,13 +112,15 @@ header .logo {
 section {
   animation: load 5s;
 }
-section h1 {
+section .title {
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
   margin: 0;
   margin-left: 1em;
   padding-bottom: 0.4em;
 }
-section h1 span {
+section .title span {
   border-bottom: solid 5px #99E2D0;
 }
 
