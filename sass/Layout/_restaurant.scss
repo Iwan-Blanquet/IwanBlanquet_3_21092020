@@ -17,6 +17,7 @@ header {
     padding-bottom: 3em;
 }
 section {
+    animation: load 5s;
     & h1 {
         text-transform: uppercase;
         margin: 0;
@@ -40,6 +41,7 @@ section {
     padding-bottom: 1em;
     @include btn-shadow;
     overflow: hidden;
+    animation: load 2000ms;
     &_description {
        & h2, p {
            margin: 0.25em;
