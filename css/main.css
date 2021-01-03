@@ -1,34 +1,37 @@
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes heart {
   0% {
     opacity: 0;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.15;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   75% {
-    opacity: 0.75;
+    opacity: 0, 75;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes load {
-  0% {
-    opacity: 0;
+@keyframes spin {
+  from {
+    rotate: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes menu {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0);
+  to {
+    rotate: 360;
   }
 }
 @font-face {
@@ -50,13 +53,29 @@ body {
 
 body {
   margin: 0;
-  animation: load 3000ms;
 }
 @media (min-width: 750px) {
   body {
     width: 55%;
     margin: auto;
   }
+}
+
+.loader_spinner {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: solid 20px #9356DC;
+  border-radius: 50%;
+  background: #99E2D0;
+  z-index: -1;
+  animation: spin linear infinite;
+}
+
+.container {
+  animation: load 3000ms;
 }
 
 img {
@@ -86,7 +105,7 @@ header {
 }
 
 .btn {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9256dc);
   color: white;
   cursor: pointer;
   width: 75%;
@@ -102,6 +121,10 @@ header {
     width: 50%;
     margin-left: 20%;
   }
+}
+.btn:hover {
+  box-shadow: 0px 10px 10px #aaaaaa;
+  background: linear-gradient(#ff93e1, #a16be0);
 }
 
 .work {
@@ -183,7 +206,7 @@ section h2 {
   position: relative;
   margin: 2em;
 }
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .restaurant_img--1 {
     background-size: 70em;
     height: 400px;
@@ -198,7 +221,7 @@ section h2 {
   position: relative;
   margin: 2em;
 }
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .restaurant_img--2 {
     background-size: 70em;
     height: 400px;
@@ -213,7 +236,7 @@ section h2 {
   position: relative;
   margin: 2em;
 }
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .restaurant_img--3 {
     background-size: 70em;
     height: 400px;
@@ -228,7 +251,7 @@ section h2 {
   position: relative;
   margin: 2em;
 }
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .restaurant_img--4 {
     background-size: 70em;
     height: 400px;
@@ -270,7 +293,11 @@ section h2 {
   margin: 0;
   font-size: 1.6em;
   cursor: pointer;
-  color: #FF79DA;
+}
+@media (max-width: 300px) {
+  .restaurant i {
+    left: 220px;
+  }
 }
 @media (min-width: 375px) {
   .restaurant i {
@@ -280,6 +307,21 @@ section h2 {
 @media (min-width: 400px) {
   .restaurant i {
     left: 350px;
+  }
+}
+@media (min-width: 500px) {
+  .restaurant i {
+    left: 450px;
+  }
+}
+@media (min-width: 600px) {
+  .restaurant i {
+    left: 520px;
+  }
+}
+@media (min-width: 700px) {
+  .restaurant i {
+    left: 580px;
   }
 }
 @media (min-width: 750px) {
@@ -299,6 +341,7 @@ section h2 {
 }
 .restaurant .fas {
   display: none;
+  color: #FF79DA;
 }
 
 a h3, a p {

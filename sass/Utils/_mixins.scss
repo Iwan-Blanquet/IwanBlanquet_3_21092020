@@ -20,6 +20,10 @@
 		margin-left: 20%;
 	}
 }
+@mixin btn-hover ($color:$color-background-2, $color-primary-light:lighten($color-primary, 5%), $color-secondary-light:lighten($color-secondary, 5%)){
+	box-shadow: 0px 10px 10px darken($color, 20%);
+	background: linear-gradient($color-secondary-light, $color-primary-light);
+}
 @mixin image-restaurant ($url){
 	height: 300px;
 	background: $url no-repeat;
@@ -28,7 +32,7 @@
 	border-radius: 2em 2em 0 0;
 	position: relative;
 	margin: 2em;
-	@media (min-width: 750px){
+	@media (min-width: 600px){
 		background-size: 70em;
 		height: 400px;
 	}
@@ -38,7 +42,7 @@
 	height: 300px;
 	background-size: 30em;
 	margin: 0;
-	@media (min-width: 750px){
+	@media (min-width: 550px){
 		background-size: 70em;
 		height: 400px;
 	}

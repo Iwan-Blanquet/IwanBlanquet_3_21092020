@@ -1,12 +1,28 @@
 body {
 	margin: 0;
-	animation: load 3000ms;
 	@media (min-width: 750px) {
 		width: 55%;
 		margin: auto;
 	}
 }
-img{
+.loader {
+    &_spinner {
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		border: solid 20px $color-primary;
+		border-radius: 50%;
+		background: $color-tertiary;
+		z-index: -1;
+		animation: spin linear infinite;
+    }
+}
+.container {
+	animation: load 3000ms;
+}
+img {
 	height: 100%;
 	width: 65%;
 }
@@ -27,16 +43,19 @@ header{
 	background: $color-background-1;
 	padding: 1.8em;
 }
-.btn{
+.btn {
 	@include btn;
+	&:hover {
+		@include btn-hover;
+	}
 }
 
 .work {
 	margin-bottom: 4em;
-	& i{
+	& i {
 		font-size: 1.2em;
 	}
-	&_btn{
+	&_btn {
 		display: flex;
 		position: relative;
 		background: $color-background-1;
@@ -141,25 +160,37 @@ section h2 {
 		margin: 0;
 		font-size: 1.6em;
 		cursor: pointer;
-		color: $color-secondary;
-		@media (min-width: 375px){
+		@media (max-width: 300px) {
+			left: 220px;
+		}
+		@media (min-width: 375px) {
 			left: 300px;
 		}
-		@media (min-width: 400px){
+		@media (min-width: 400px) {
 			left: 350px;
+		}
+		@media (min-width: 500px) {
+			left: 450px;
+		}
+		@media (min-width: 600px) {
+			left: 520px;
+		}
+		@media (min-width: 700px) {
+			left: 580px;
 		}
 		@media (min-width: 750px) {
 			left:350px;
 		}
-		@media (min-width: 1000px){
+		@media (min-width: 1000px) {
 			left: 500px;
 		}
-		@media (min-width: 1200px){
+		@media (min-width: 1200px) {
 			left: 700px;
 		}
 		}	
 	.fas {
 		display:none;
+		color: $color-secondary;
 	}
 }
 a {
