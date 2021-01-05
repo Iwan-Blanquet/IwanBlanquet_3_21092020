@@ -26,14 +26,6 @@
     opacity: 1;
   }
 }
-@keyframes spin {
-  from {
-    rotate: 0;
-  }
-  to {
-    rotate: 360;
-  }
-}
 @keyframes loading {
   to {
     opacity: 0;
