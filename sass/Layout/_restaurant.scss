@@ -34,11 +34,11 @@ section {
     padding-bottom: 4em;
 }
 .maindish {
-    animation: load 3000ms;
+    animation: load 3500ms;
     padding-bottom: 4em;
 }
 .dessert {
-    animation: load 4000ms;
+    animation: load 5000ms;
     padding-bottom: 4em;
 }
 .dish {
@@ -62,32 +62,35 @@ section {
         right: 20px;
         font-weight: bold;
     }
-    &::before {
+    &_select {
         transition: all 0.2s linear 0s;
-        content: "\f058";
-        font-family: "Font Awesome 5 Free";
-        font-size: 30px;
+        content: "";
         display: flex;
-        align-items: center;
-        justify-content: center;
         position: absolute;
         top: 0;
-        right: -3em;
-        width: 3em;
+        right: -6em;
+        width: 6em;
         height: 100%;
-        color: white;
         background-color: $color-tertiary;
-        text-align: center;
-        transform: rotate(0deg);
+        &_check {
+            position: absolute;
+            right: -3em;
+            top: 30px;
+            font-size: 30px;
+            color: white;
+        }
     }
     &:hover {
         & .dish_price {
             transition: all 0.2s linear 0s;
             text-indent: -105px;
         }
-        &::before {
+        & .dish_select {
             right: 0;
             text-indent: 0px;
+        }
+        & .dish_select_check {
+            right: 1em;
             transform: rotate(360deg);
             transition: transform 500ms ease-in-out;
         }

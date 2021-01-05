@@ -1,5 +1,0 @@
-@function hover-heart($color) {
-    @if (hover) {
-       @return $color $color-btn;
-    }
-}

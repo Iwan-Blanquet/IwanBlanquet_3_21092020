@@ -1,9 +1,8 @@
-@charset "UTF-8";
 @keyframes load {
   0% {
     opacity: 0;
   }
-  90% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -33,6 +32,16 @@
   }
   to {
     rotate: 360;
+  }
+}
+@keyframes loading {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes Animation {
+  to {
+    opacity: 1;
   }
 }
 @font-face {
@@ -120,9 +129,6 @@ header .logo {
   padding-bottom: 3em;
 }
 
-section {
-  animation: load 5s;
-}
 section .title {
   text-transform: uppercase;
   font-weight: bold;
@@ -135,7 +141,18 @@ section .title span {
   border-bottom: solid 5px #99E2D0;
 }
 
-.menu {
+.entrees {
+  animation: load 2000ms;
+  padding-bottom: 4em;
+}
+
+.maindish {
+  animation: load 3500ms;
+  padding-bottom: 4em;
+}
+
+.dessert {
+  animation: load 5000ms;
   padding-bottom: 4em;
 }
 
@@ -149,7 +166,6 @@ section .title span {
   padding-bottom: 1em;
   box-shadow: 0px 5px 5px #c4c4c4;
   overflow: hidden;
-  animation: load 2000ms;
 }
 .dish_description h2, .dish_description p {
   margin: 0.25em;
@@ -160,30 +176,36 @@ section .title span {
   right: 20px;
   font-weight: bold;
 }
-.dish::before {
+.dish_select {
   transition: all 0.2s linear 0s;
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  font-size: 30px;
+  content: "";
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 0;
-  right: -3em;
-  width: 3em;
+  right: -6em;
+  width: 6em;
   height: 100%;
-  color: white;
   background-color: #99E2D0;
-  text-align: center;
+}
+.dish_select_check {
+  position: absolute;
+  right: -3em;
+  top: 30px;
+  font-size: 30px;
+  color: white;
 }
 .dish:hover .dish_price {
   transition: all 0.2s linear 0s;
   text-indent: -105px;
 }
-.dish:hover::before {
+.dish:hover .dish_select {
   right: 0;
   text-indent: 0px;
+}
+.dish:hover .dish_select_check {
+  right: 1em;
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
 }
 .dish:hover h2, .dish:hover p {
   white-space: nowrap;
