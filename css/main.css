@@ -354,6 +354,11 @@ section h2 {
     left: 800px;
   }
 }
+@media (min-width: 1800px) {
+  .restaurant i {
+    left: 900px;
+  }
+}
 .restaurant .fas {
   display: none;
   color: #FF79DA;
